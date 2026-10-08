@@ -1,73 +1,73 @@
 # Cheatsheet
 
-> Resumo rápido. Para a lista completa e atual, use `/help` e a [documentação oficial](https://docs.claude.com/en/docs/claude-code/overview).
+> Quick summary. For the full, current list, use `/help` and the [official documentation](https://docs.claude.com/en/docs/claude-code/overview).
 
 ## Terminal
 
-| Comando | O que faz |
-|---------|-----------|
-| `claude` | Inicia sessão interativa |
-| `claude "prompt"` | Inicia já com um prompt |
-| `claude -p "prompt"` | Modo não interativo: responde e sai |
-| `claude --continue` | Retoma a última conversa |
-| `claude --resume` | Escolhe uma conversa anterior |
-| `claude --version` | Mostra a versão |
+| Command | What it does |
+|---------|--------------|
+| `claude` | Starts an interactive session |
+| `claude "prompt"` | Starts with a prompt already given |
+| `claude -p "prompt"` | Non-interactive mode: answers and exits |
+| `claude --continue` | Resumes the last conversation |
+| `claude --resume` | Pick a previous conversation |
+| `claude --version` | Shows the version |
 
-## Dentro da sessão
+## Inside the session
 
-| Comando | O que faz |
-|---------|-----------|
-| `/help` | Ajuda e lista de comandos |
-| `/init` | Gera um `CLAUDE.md` para o projeto |
-| `/clear` | Zera o contexto |
-| `/compact` | Resume o histórico para liberar contexto |
-| `/context` | Mostra o uso da janela de contexto |
-| `/cost` | Mostra o consumo da sessão |
-| `/model` | Troca o modelo |
-| `/permissions` | Vê e edita regras de permissão |
-| `/resume` | Retoma uma conversa anterior |
-| `/exit` | Sai |
+| Command | What it does |
+|---------|--------------|
+| `/help` | Help and command list |
+| `/init` | Generates a `CLAUDE.md` for the project |
+| `/clear` | Resets the context |
+| `/compact` | Summarizes the history to free up context |
+| `/context` | Shows context window usage |
+| `/cost` | Shows the session's consumption |
+| `/model` | Switches the model |
+| `/permissions` | Views and edits permission rules |
+| `/resume` | Resumes a previous conversation |
+| `/exit` | Exits |
 
-## Atalhos
+## Shortcuts
 
-| Atalho | O que faz |
-|--------|-----------|
-| `Esc` | Interrompe a ação atual |
-| `Shift+Tab` | Alterna modo: normal, aceitar edições, plano |
-| `@arquivo` | Referencia um arquivo |
-| `!comando` | Executa um comando de shell direto |
-| `Ctrl+C` | Cancela entrada / sai (duas vezes) |
+| Shortcut | What it does |
+|----------|--------------|
+| `Esc` | Interrupts the current action |
+| `Shift+Tab` | Cycles mode: normal, accept edits, plan |
+| `@file` | References a file |
+| `!command` | Runs a shell command directly |
+| `Ctrl+C` | Cancels input / exits (twice) |
 
-## Primeiros passos
+## First steps
 
-**Projeto existente** ([módulo 07](docs/07-projeto-existente.md))
+**Existing project** ([module 07](docs/07-existing-project.md))
 
-1. `git switch -c claude/tarefa` (árvore limpa) e `claude`
-2. "Explique a arquitetura e como testar. Não altere nada."
-3. `/init` → revisar e enxugar o `CLAUDE.md`
-4. Rodar testes/lint; tarefa pequena com critério de sucesso
+1. `git switch -c claude/task` (clean tree) and `claude`
+2. "Explain the architecture and how to test it. Don't change anything."
+3. `/init` → review and trim the `CLAUDE.md`
+4. Run tests/lint; small task with a success criterion
 5. `git diff` → commit
 
-**Projeto novo** ([módulo 08](docs/08-projeto-novo.md))
+**New project** ([module 08](docs/08-new-project.md))
 
-1. `git init` e `claude`
-2. Modo plano: escopo, stack, endpoints, fatias
-3. Esqueleto mínimo + teste + README com comandos
-4. `CLAUDE.md` inicial → primeiro commit
-5. Fatias: funcionalidade → teste → commit
+1. `git init` and `claude`
+2. Plan mode: scope, stack, endpoints, slices
+3. Minimal skeleton + test + README with commands
+4. Initial `CLAUDE.md` → first commit
+5. Slices: feature → test → commit
 
-## Qual ferramenta? ([módulo 03](docs/03-alternativas.md))
+## Which tool? ([module 03](docs/03-alternatives.md))
 
-| Preciso de... | Categoria |
+| I need... | Category |
 |---|---|
-| Delegar tarefas no repo, com automação | Agente de terminal |
-| Tudo dentro do editor | IDE com IA / extensão |
-| Atribuir uma issue e receber um PR | Agente na nuvem |
+| To delegate tasks in the repo, with automation | Terminal agent |
+| Everything inside the editor | AI IDE / extension |
+| To assign an issue and get a PR | Cloud agent |
 
-## Regras de bolso
+## Rules of thumb
 
-1. Uma sessão, um assunto. Mudou de tarefa? `/clear`.
-2. Explore e planeje antes de implementar.
-3. Sempre dê um critério de sucesso verificável.
-4. Leia os diffs.
-5. Errou 3 vezes seguidas? Recomece com um prompt melhor.
+1. One session, one topic. Changed task? `/clear`.
+2. Explore and plan before implementing.
+3. Always give a verifiable success criterion.
+4. Read the diffs.
+5. Wrong 3 times in a row? Start over with a better prompt.
