@@ -1,49 +1,49 @@
-# Claude Code do Zero
+# Claude Code from Zero
 
-Curso prático e gratuito, em português, para **programadores** que querem usar o [Claude Code](https://docs.claude.com/en/docs/claude-code/overview) com método: menos tentativa e erro, mais resultado confiável.
+A free, hands-on course in English for **programmers** who want to use [Claude Code](https://docs.claude.com/en/docs/claude-code/overview) with a method: less trial and error, more reliable results.
 
-> **Fonte da verdade:** o Claude Code muda rápido. Este material explica *como pensar e trabalhar*; para flags, comandos e configurações exatas, a [documentação oficial](https://docs.claude.com/en/docs/claude-code/overview) manda. Cada módulo indica a data da última revisão.
+> **Source of truth:** Claude Code changes fast. This material explains *how to think and work*; for exact flags, commands and settings, the [official documentation](https://docs.claude.com/en/docs/claude-code/overview) rules. Each module states the date of its last review.
 
-## Para quem é
+## Who it's for
 
-Para quem já programa e sabe usar terminal e git. Não ensinamos programação, e sim como delegar, guiar e revisar o trabalho de um agente de código.
+For people who already program and are comfortable with the terminal and git. We don't teach programming; we teach how to delegate, guide and review the work of a coding agent.
 
-## Trilha
+## Learning path
 
-### Núcleo (comece aqui)
+### Core (start here)
 
-| # | Módulo | Você aprende |
-|---|--------|--------------|
-| 00 | [Antes de começar](docs/00-antes-de-comecar.md) | O que é o Claude Code e como difere de chat e autocomplete |
-| 01 | [Antes × Depois: a mudança de paradigma](docs/01-paradigma.md) | Como programávamos antes e depois do Claude Code, e seu novo papel |
-| 02 | [AI Native](docs/02-ai-native.md) | O que é, o que muda, por que importa e como adotar |
-| 03 | [Alternativas ao Claude Code](docs/03-alternativas.md) | Categorias de ferramentas, semelhanças, diferenças e quando escolher cada uma |
-| 04 | [Instalação e primeiro uso](docs/04-instalacao.md) | Instalar, autenticar, primeira sessão |
-| 05 | [Como o Claude Code trabalha](docs/05-como-funciona.md) | Ferramentas, contexto, permissões e o loop do agente |
-| 06 | [Escrevendo bons prompts](docs/06-bons-prompts.md) | Especificidade, critérios de sucesso, exemplos antes/depois |
-| 07 | [Começando em um projeto existente](docs/07-projeto-existente.md) | Mapear, gerar o `CLAUDE.md` e fazer a primeira mudança com segurança |
-| 08 | [Começando um projeto do zero](docs/08-projeto-novo.md) | Planejar, gerar o esqueleto e evoluir em fatias |
+| # | Module | You learn |
+|---|--------|-----------|
+| 00 | [Before you start](docs/00-before-you-start.md) | What Claude Code is and how it differs from chat and autocomplete |
+| 01 | [Before × After: the paradigm shift](docs/01-paradigm.md) | How we programmed before and after Claude Code, and your new role |
+| 02 | [AI Native](docs/02-ai-native.md) | What it is, what changes, why it matters and how to adopt it |
+| 03 | [Alternatives to Claude Code](docs/03-alternatives.md) | Tool categories, similarities, differences and when to choose each |
+| 04 | [Installation and first use](docs/04-installation.md) | Install, authenticate, first session |
+| 05 | [How Claude Code works](docs/05-how-it-works.md) | Tools, context, permissions and the agent loop |
+| 06 | [Writing good prompts](docs/06-good-prompts.md) | Specificity, success criteria, before/after examples |
+| 07 | [Starting on an existing project](docs/07-existing-project.md) | Map it, generate the `CLAUDE.md` and make the first change safely |
+| 08 | [Starting a project from scratch](docs/08-new-project.md) | Plan, generate the skeleton and evolve in slices |
 
-### Em breve
+### Coming soon
 
-09 Explorar → planejar → implementar · 10 Gerenciando contexto · 11 CLAUDE.md · 12 Permissões e segurança · 13 Verificação · 14 Git e GitHub · 15 Slash commands e skills · 16 Subagentes · 17 Hooks e MCP · 18 Modo headless · 19 Anti-padrões
+09 Explore → plan → implement · 10 Managing context · 11 CLAUDE.md · 12 Permissions and security · 13 Verification · 14 Git and GitHub · 15 Slash commands and skills · 16 Subagents · 17 Hooks and MCP · 18 Headless mode · 19 Anti-patterns
 
-## Material de apoio
+## Supporting material
 
-- [CHEATSHEET.md](CHEATSHEET.md): comandos e atalhos em uma página
-- [templates/CLAUDE.md.exemplo](templates/CLAUDE.md.exemplo): ponto de partida para o seu `CLAUDE.md`
-- [exemplos/](exemplos/): projeto-fio-condutor para praticar
+- [CHEATSHEET.md](CHEATSHEET.md): commands and shortcuts on one page
+- [templates/CLAUDE.md.example](templates/CLAUDE.md.example): starting point for your `CLAUDE.md`
+- [examples/](examples/): running project to practice on
 
-## Como estudar
+## How to study
 
-1. Leia o módulo (5 minutos).
-2. Faça o **exercício** no projeto-fio-condutor ou em um projeto seu.
-3. Confira o **checklist** no fim. Se não conseguir marcar tudo, repita o exercício.
+1. Read the module (5 minutes).
+2. Do the **exercise** on the running project or on a project of your own.
+3. Check the **checklist** at the end. If you can't tick every item, repeat the exercise.
 
-## Contribuindo
+## Contributing
 
-Correções e sugestões são bem-vindas via issue ou pull request. Ao escrever ou alterar um módulo:
+Corrections and suggestions are welcome via issue or pull request. When writing or changing a module:
 
-- Siga o padrão: **Objetivo** (1 linha), conceito curto (tabelas e listas), **exercício** e **checklist**.
-- Seja objetivo: cerca de 60 a 100 linhas, resposta primeiro, exemplos reais em vez de teoria.
-- Indique a data de revisão e evite dados que envelhecem rápido (preços, versões); linke a fonte oficial.
+- Follow the pattern: **Goal** (1 line), short concept (tables and lists), **exercise** and **checklist**.
+- Be concise: about 60 to 100 lines, answer first, real examples instead of theory.
+- State the review date and avoid data that ages fast (prices, versions); link to the official source.

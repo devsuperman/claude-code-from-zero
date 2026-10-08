@@ -1,79 +1,79 @@
 # 02 · AI Native
 
-_Última revisão: 2026-10_
+_Last reviewed: 2026-10_
 
-**Objetivo:** entender o que significa trabalhar de forma AI native, o que isso muda e por que importa.
+**Goal:** understand what working in an AI-native way means, what it changes and why it matters.
 
-## O que é
+## What it is
 
-**AI native** é projetar o jeito de trabalhar (e, às vezes, o produto) assumindo que a IA está presente desde o início, e não encaixada depois.
+**AI native** means designing the way you work (and sometimes the product) assuming AI is present from the start, not bolted on afterwards.
 
-| | Usar IA | Ser AI native |
+| | Using AI | Being AI native |
 |---|---|---|
-| Ponto de partida | Fluxo antigo + uma ferramenta nova | Fluxo pensado para humano + agente |
-| Onde a IA entra | Em momentos isolados (um autocomplete, uma pergunta) | Em todo o ciclo: explorar, planejar, implementar, testar, revisar |
-| O que você prepara | Nada de especial | Contexto, testes e especificações que o agente consiga usar |
-| Pergunta típica | "A IA consegue fazer isso?" | "Como estruturo o trabalho para a IA fazer isso bem?" |
+| Starting point | Old workflow + a new tool | Workflow designed for human + agent |
+| Where AI comes in | Isolated moments (an autocomplete, a question) | The whole cycle: explore, plan, implement, test, review |
+| What you prepare | Nothing special | Context, tests and specs the agent can use |
+| Typical question | "Can the AI do this?" | "How do I structure the work so the AI does this well?" |
 
-## O que muda
+## What changes
 
-- **O repositório vira interface.** `CLAUDE.md`, testes, scripts de build e mensagens de commit claras passam a ser insumo do agente, não só da equipe.
-- **Especificação ganha valor.** Quem descreve bem o problema e o critério de sucesso obtém mais.
-- **Testes viram o contrato.** Sem verificação automática, o agente trabalha às cegas e você revisa tudo na mão.
-- **Revisão vira o centro do trabalho.** Gerar código é barato; garantir que está certo, não.
-- **Iteração fica curta.** Experimentar duas abordagens custa minutos, então vale comparar antes de decidir.
-- **Habilidades valorizadas:** design de sistemas, leitura crítica de código, domínio do negócio, comunicação precisa.
+- **The repository becomes an interface.** `CLAUDE.md`, tests, build scripts and clear commit messages become input for the agent, not just for the team.
+- **Specification gains value.** Whoever describes the problem and the success criterion well gets more out of it.
+- **Tests become the contract.** Without automatic verification, the agent works blind and you review everything by hand.
+- **Review becomes the center of the work.** Generating code is cheap; making sure it is right is not.
+- **Iteration gets short.** Trying two approaches costs minutes, so it's worth comparing before deciding.
+- **Valued skills:** systems design, critical code reading, business domain knowledge, precise communication.
 
-## Por que importa
+## Why it matters
 
-- **Velocidade:** tarefas repetitivas e exploratórias caem de horas para minutos.
-- **Custo de experimentar:** protótipos e refatorações antes impraticáveis ficam viáveis.
-- **Competitividade:** quem aprende a delegar bem entrega mais com o mesmo time.
-- **Qualidade, se bem feito:** testes e documentação deixam de ser o que "fica para depois".
+- **Speed:** repetitive and exploratory tasks drop from hours to minutes.
+- **Cost of experimenting:** prototypes and refactorings that were impractical become feasible.
+- **Competitiveness:** those who learn to delegate well deliver more with the same team.
+- **Quality, if done well:** tests and documentation stop being what gets "left for later".
 
-## Os riscos
+## The risks
 
-| Risco | Como lidar |
+| Risk | How to handle it |
 |---|---|
-| Dívida técnica por código aceito sem entender | Revisão obrigatória; mudanças pequenas |
-| Excesso de confiança | Critérios verificáveis; testes rodando |
-| Segurança e vazamento de dados | Permissões mínimas, sem segredos no diretório, revisar comandos |
-| Dependência de uma ferramenta | Conhecer as [alternativas](03-alternativas.md); manter o conhecimento no repositório |
+| Technical debt from code accepted without understanding | Mandatory review; small changes |
+| Overconfidence | Verifiable criteria; tests running |
+| Security and data leaks | Minimal permissions, no secrets in the directory, review commands |
+| Dependence on one tool | Know the [alternatives](03-alternatives.md); keep knowledge in the repository |
 
-## Níveis de adoção
+## Adoption levels
 
-| Nível | Como se trabalha |
+| Level | How you work |
 |---|---|
-| 0 | Sem IA |
+| 0 | No AI |
 | 1 | Autocomplete |
-| 2 | Chat: você cola código e copia a resposta |
-| 3 | Agente interativo (este curso): você delega e revisa |
-| 4 | Agentes em paralelo ou em automação (CI, modo headless), com você supervisionando |
+| 2 | Chat: you paste code and copy the answer |
+| 3 | Interactive agent (this course): you delegate and review |
+| 4 | Agents in parallel or in automation (CI, headless mode), with you supervising |
 
-Quase ninguém precisa do nível 4 no primeiro dia. Suba um nível por vez, quando o anterior estiver confortável.
+Almost nobody needs level 4 on day one. Move up one level at a time, once the previous one feels comfortable.
 
-## Como começar
+## How to start
 
-1. Escolha um projeto real e peça ao agente que explique a arquitetura.
-2. Crie um `CLAUDE.md` com comandos e convenções.
-3. Garanta que os testes rodam com um comando.
-4. Delegue tarefas pequenas com critério de sucesso.
-5. Anote o que o agente errou e leve a correção para o `CLAUDE.md`.
+1. Pick a real project and ask the agent to explain the architecture.
+2. Create a `CLAUDE.md` with commands and conventions.
+3. Make sure the tests run with one command.
+4. Delegate small tasks with a success criterion.
+5. Note what the agent got wrong and carry the fix into the `CLAUDE.md`.
 
-## Exercício
+## Exercise
 
-Avalie um projeto seu:
+Assess a project of your own:
 
-1. Os testes rodam com um único comando?
-2. Um estranho (ou um agente) consegue descobrir como rodar o projeto lendo só o repositório?
-3. As convenções estão escritas em algum lugar?
+1. Do the tests run with a single command?
+2. Can a stranger (or an agent) figure out how to run the project by reading only the repository?
+3. Are the conventions written down somewhere?
 
-Cada "não" é uma melhoria que torna o projeto mais AI native. Corrija a primeira.
+Each "no" is an improvement that makes the project more AI native. Fix the first one.
 
 ## Checklist
 
-- [ ] Sei diferenciar usar IA de ser AI native
-- [ ] Sei três mudanças práticas no meu jeito de trabalhar
-- [ ] Sei em que nível de adoção estou
+- [ ] I can tell using AI from being AI native
+- [ ] I know three practical changes to the way I work
+- [ ] I know which adoption level I'm at
 
-**Próximo:** [03 · Alternativas ao Claude Code](03-alternativas.md)
+**Next:** [03 · Alternatives to Claude Code](03-alternatives.md)
