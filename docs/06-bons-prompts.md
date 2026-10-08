@@ -1,8 +1,8 @@
-# 03 · Escrevendo bons prompts
+# 06 · Escrevendo bons prompts
 
 _Última revisão: 2026-10_
 
-Não existe prompt mágico. Existe **clareza**: o que fazer, onde, e como saber que terminou.
+**Objetivo:** escrever prompts claros: o que fazer, onde, e como saber que terminou.
 
 ## Os 4 elementos
 
@@ -70,4 +70,4 @@ Compare o resultado com o que você teria obtido com o prompt preguiçoso.
 - [ ] Usei modo plano em uma tarefa não trivial
 - [ ] Sei quando dar `Esc` ou `/clear` em vez de insistir
 
-**Próximo:** módulo 04 (em breve)
+**Próximo:** [07 · Começando em um projeto existente](07-projeto-existente.md)

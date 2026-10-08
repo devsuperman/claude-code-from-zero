@@ -38,6 +38,32 @@
 | `!comando` | Executa um comando de shell direto |
 | `Ctrl+C` | Cancela entrada / sai (duas vezes) |
 
+## Primeiros passos
+
+**Projeto existente** ([módulo 07](docs/07-projeto-existente.md))
+
+1. `git switch -c claude/tarefa` (árvore limpa) e `claude`
+2. "Explique a arquitetura e como testar. Não altere nada."
+3. `/init` → revisar e enxugar o `CLAUDE.md`
+4. Rodar testes/lint; tarefa pequena com critério de sucesso
+5. `git diff` → commit
+
+**Projeto novo** ([módulo 08](docs/08-projeto-novo.md))
+
+1. `git init` e `claude`
+2. Modo plano: escopo, stack, endpoints, fatias
+3. Esqueleto mínimo + teste + README com comandos
+4. `CLAUDE.md` inicial → primeiro commit
+5. Fatias: funcionalidade → teste → commit
+
+## Qual ferramenta? ([módulo 03](docs/03-alternativas.md))
+
+| Preciso de... | Categoria |
+|---|---|
+| Delegar tarefas no repo, com automação | Agente de terminal |
+| Tudo dentro do editor | IDE com IA / extensão |
+| Atribuir uma issue e receber um PR | Agente na nuvem |
+
 ## Regras de bolso
 
 1. Uma sessão, um assunto. Mudou de tarefa? `/clear`.
