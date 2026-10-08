@@ -1,8 +1,8 @@
-# 02 · Como o Claude Code trabalha
+# 05 · Como o Claude Code trabalha
 
 _Última revisão: 2026-10_
 
-Entender o mecanismo evita metade dos erros de uso.
+**Objetivo:** entender o mecanismo (loop, ferramentas, contexto, permissões) para evitar a maioria dos erros de uso.
 
 ## O loop do agente
 
@@ -10,11 +10,11 @@ Entender o mecanismo evita metade dos erros de uso.
 Você pede → Claude decide uma ação → usa uma ferramenta → lê o resultado → decide o próximo passo → ... → responde
 ```
 
-Ele repete esse ciclo até concluir. Cada passo é visível: você acompanha e pode interromper com `Esc`.
+Repete até concluir. Cada passo é visível e você interrompe com `Esc`.
 
 ## Ferramentas
 
-O modelo em si só gera texto. O que o torna útil são as **ferramentas** que ele aciona:
+O modelo só gera texto; as **ferramentas** é que agem:
 
 | Tipo | Exemplos | Pede permissão? |
 |------|----------|-----------------|
@@ -25,7 +25,7 @@ O modelo em si só gera texto. O que o torna útil são as **ferramentas** que e
 
 ## Contexto: o recurso escasso
 
-Tudo o que acontece na sessão (suas mensagens, arquivos lidos, saídas de comandos) vai para a **janela de contexto**, que tem tamanho limitado.
+Mensagens, arquivos lidos e saídas de comandos vão para a **janela de contexto**, que é limitada.
 
 - Quanto mais cheia, **pior a atenção** do modelo aos detalhes e **maior o custo**.
 - Arquivos grandes e logs longos consomem muito.
@@ -47,11 +47,11 @@ Por padrão o Claude Code **pergunta antes** de editar ou executar. Você escolh
 2. **Aceitar edições:** edita sem perguntar, mas continua perguntando sobre comandos
 3. **Plano:** só lê e propõe um plano, sem alterar nada
 
-> Comece em modo normal para aprender o que ele faz. Libere aos poucos o que for seguro (por exemplo, `npm test`). O módulo 07 aprofunda isso.
+> Comece em modo normal para aprender o que ele faz. Libere aos poucos o que for seguro (por exemplo, `npm test`). Um módulo futuro de segurança aprofunda isso.
 
 ## Memória do projeto: CLAUDE.md
 
-O modelo não lembra de sessões anteriores. O que persiste é o arquivo **`CLAUDE.md`** na raiz do projeto, lido automaticamente no início de cada sessão. Nele ficam comandos de build/teste, convenções e avisos importantes. Crie um com `/init` e use [este template](../templates/CLAUDE.md.exemplo) como base. O módulo 06 detalha.
+O modelo não lembra de sessões anteriores. O que persiste é o **`CLAUDE.md`** na raiz do projeto, lido no início de cada sessão: comandos de build/teste, convenções e avisos. Crie com `/init` e use [este template](../templates/CLAUDE.md.exemplo) como base. Os módulos [07](07-projeto-existente.md) e [08](08-projeto-novo.md) mostram como criá-lo.
 
 ## Ele erra? Sim
 
@@ -75,4 +75,4 @@ Pode inventar uma API, assumir algo errado ou "concluir" sem verificar. Por isso
 - [ ] Sei alternar entre os modos de permissão
 - [ ] Sei que o `CLAUDE.md` é a memória persistente do projeto
 
-**Próximo:** [03 · Escrevendo bons prompts](03-bons-prompts.md)
+**Próximo:** [06 · Escrevendo bons prompts](06-bons-prompts.md)

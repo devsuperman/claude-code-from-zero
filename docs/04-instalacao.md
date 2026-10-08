@@ -1,6 +1,8 @@
-# 01 · Instalação e primeiro uso
+# 04 · Instalação e primeiro uso
 
 _Última revisão: 2026-10 · Confirme os passos atuais na [documentação oficial](https://docs.claude.com/en/docs/claude-code/setup)._
+
+**Objetivo:** instalar, autenticar e fazer a primeira pergunta ao código.
 
 ## Instalar
 
@@ -27,13 +29,11 @@ cd meu-projeto
 claude
 ```
 
-Na primeira execução, o Claude Code pede autenticação (conta Claude ou chave de API) e abre o navegador para concluir o login.
-
-Você cai em um prompt interativo. Escreva em linguagem natural e tecle Enter.
+Na primeira execução ele pede autenticação (conta Claude ou chave de API) e abre o navegador. Depois, escreva em linguagem natural e tecle Enter.
 
 ## Seus primeiros prompts
 
-Comece **só lendo**, sem pedir alterações. Assim você entende como ele explora o código:
+Comece **só lendo**, sem pedir alterações:
 
 ```
 Explique a estrutura deste projeto: pastas principais, como rodar e como testar.
@@ -42,8 +42,6 @@ Explique a estrutura deste projeto: pastas principais, como rodar e como testar.
 ```
 Onde é feita a autenticação? Mostre os arquivos e o fluxo.
 ```
-
-Observe o que ele faz: lê arquivos, busca padrões, e pede permissão quando precisa executar algo.
 
 ## O essencial da interface
 
@@ -78,4 +76,4 @@ Observe o que ele faz: lê arquivos, busca padrões, e pede permissão quando pr
 - [ ] Fiz uma pergunta sobre o código e li a resposta
 - [ ] Usei `@arquivo`, `Esc` e retomei uma sessão
 
-**Próximo:** [02 · Como o Claude Code trabalha](02-como-funciona.md)
+**Próximo:** [05 · Como o Claude Code trabalha](05-como-funciona.md)
