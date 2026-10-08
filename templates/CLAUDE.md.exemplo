@@ -1,0 +1,37 @@
+# Nome do Projeto
+
+Uma linha sobre o que o projeto faz.
+
+## Comandos
+
+- Instalar: `npm install`
+- Rodar em dev: `npm run dev`
+- Testes (todos): `npm test`
+- Teste único: `npm test -- caminho/do/arquivo`
+- Lint/format: `npm run lint`
+- Typecheck: `npm run typecheck`
+
+## Arquitetura (só o que não é óbvio)
+
+- `src/api/`: handlers HTTP, sem regra de negócio
+- `src/domain/`: regras de negócio, sem I/O
+- `src/infra/`: banco, filas, clientes externos
+
+## Convenções
+
+- TypeScript estrito; evite `any`
+- Commits no padrão Conventional Commits
+- Testes ficam ao lado do código: `foo.ts` → `foo.test.ts`
+
+## Atenção
+
+- Nunca edite `src/generated/` à mão; é gerado por `npm run codegen`
+- Não commitar `.env`; use `.env.example`
+- Migrações de banco: sempre criar com `npm run db:migrate:new`
+
+<!--
+Dicas:
+- Mantenha curto. Cada linha deve responder: "o Claude erraria sem isso?"
+- Não repita o que está óbvio no código ou no README.
+- Atualize quando um erro se repetir.
+-->
