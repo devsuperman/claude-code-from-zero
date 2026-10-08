@@ -8,8 +8,11 @@ Ao longo do curso, você evoluirá um **encurtador de URLs** pequeno usando o Cl
 
 | Módulo | O que fazemos no projeto |
 |--------|--------------------------|
-| 02 | Explorar a base e gerar o `CLAUDE.md` |
-| 03 | Adicionar validação de URL com um bom prompt |
-| 04 | Planejar e implementar expiração de links |
-| 08 | Adicionar testes e usar como critério de sucesso |
-| 09 | Abrir um PR com a ajuda do Claude |
+| 01 | Comparar o fluxo antes × depois: adicionar validação de URL |
+| 05 | Explorar a base e observar permissões e contexto |
+| 06 | Adicionar validação de URL com um bom prompt |
+| 07 | Caminho "existente": mapear a base, gerar o `CLAUDE.md` e fazer a primeira tarefa |
+| 08 | Caminho "novo": construir o encurtador do zero, em fatias com teste e commit |
+| 09 | Planejar e implementar expiração de links |
+| 13 | Adicionar testes e usar como critério de sucesso |
+| 14 | Abrir um PR com a ajuda do Claude |

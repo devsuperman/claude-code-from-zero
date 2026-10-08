@@ -14,14 +14,19 @@ Para quem já programa e sabe usar terminal e git. Não ensinamos programação,
 
 | # | Módulo | Você aprende |
 |---|--------|--------------|
-| 00 | [Antes de começar](docs/00-antes-de-comecar.md) | O que é o Claude Code, como difere de um chat e de um autocomplete, o que esperar |
-| 01 | [Instalação e primeiro uso](docs/01-instalacao.md) | Instalar, autenticar, primeira sessão |
-| 02 | [Como o Claude Code trabalha](docs/02-como-funciona.md) | Ferramentas, contexto, permissões e o loop do agente |
-| 03 | [Escrevendo bons prompts](docs/03-bons-prompts.md) | Especificidade, critérios de sucesso, exemplos antes/depois |
+| 00 | [Antes de começar](docs/00-antes-de-comecar.md) | O que é o Claude Code e como difere de chat e autocomplete |
+| 01 | [Antes × Depois: a mudança de paradigma](docs/01-paradigma.md) | Como programávamos antes e depois do Claude Code, e seu novo papel |
+| 02 | [AI Native](docs/02-ai-native.md) | O que é, o que muda, por que importa e como adotar |
+| 03 | [Alternativas ao Claude Code](docs/03-alternativas.md) | Categorias de ferramentas, semelhanças, diferenças e quando escolher cada uma |
+| 04 | [Instalação e primeiro uso](docs/04-instalacao.md) | Instalar, autenticar, primeira sessão |
+| 05 | [Como o Claude Code trabalha](docs/05-como-funciona.md) | Ferramentas, contexto, permissões e o loop do agente |
+| 06 | [Escrevendo bons prompts](docs/06-bons-prompts.md) | Especificidade, critérios de sucesso, exemplos antes/depois |
+| 07 | [Começando em um projeto existente](docs/07-projeto-existente.md) | Mapear, gerar o `CLAUDE.md` e fazer a primeira mudança com segurança |
+| 08 | [Começando um projeto do zero](docs/08-projeto-novo.md) | Planejar, gerar o esqueleto e evoluir em fatias |
 
 ### Em breve
 
-04 Explorar → planejar → implementar · 05 Gerenciando contexto · 06 CLAUDE.md · 07 Permissões e segurança · 08 Verificação · 09 Git e GitHub · 10 Slash commands e skills · 11 Subagentes · 12 Hooks e MCP · 13 Modo headless · 14 Anti-padrões
+09 Explorar → planejar → implementar · 10 Gerenciando contexto · 11 CLAUDE.md · 12 Permissões e segurança · 13 Verificação · 14 Git e GitHub · 15 Slash commands e skills · 16 Subagentes · 17 Hooks e MCP · 18 Modo headless · 19 Anti-padrões
 
 ## Material de apoio
 
@@ -31,10 +36,14 @@ Para quem já programa e sabe usar terminal e git. Não ensinamos programação,
 
 ## Como estudar
 
-1. Leia o módulo (5 a 10 minutos).
+1. Leia o módulo (5 minutos).
 2. Faça o **exercício** no projeto-fio-condutor ou em um projeto seu.
 3. Confira o **checklist** no fim. Se não conseguir marcar tudo, repita o exercício.
 
 ## Contribuindo
 
-Correções e sugestões são bem-vindas via issue ou pull request. Mantenha o tom direto, prefira exemplos reais a teoria e indique a data de revisão ao alterar um módulo.
+Correções e sugestões são bem-vindas via issue ou pull request. Ao escrever ou alterar um módulo:
+
+- Siga o padrão: **Objetivo** (1 linha), conceito curto (tabelas e listas), **exercício** e **checklist**.
+- Seja objetivo: cerca de 60 a 100 linhas, resposta primeiro, exemplos reais em vez de teoria.
+- Indique a data de revisão e evite dados que envelhecem rápido (preços, versões); linke a fonte oficial.
