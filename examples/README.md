@@ -16,3 +16,4 @@ Throughout the course, you will evolve a small **URL shortener** using Claude Co
 | 09 | Plan and implement link expiration |
 | 13 | Add tests and use them as the success criterion |
 | 14 | Open a PR with Claude's help |
+| 21 | Add custom aliases with the simple workflow (planner, builder, reviewer) |
