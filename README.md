@@ -30,16 +30,20 @@ For people who already program and are comfortable with the terminal and git. We
 |---|--------|-----------|
 | 20 | [AI workflows: the map](docs/20-ai-workflows.md) | Why separate agents, simple × complete workflow and when to use each |
 | 21 | [Simple workflow](docs/21-simple-workflow.md) | Plan, build and review a feature with 3 agents and 2 approval points |
+| 22 | [Complete workflow I: from idea to tickets](docs/22-complete-workflow-spec-tickets.md) | Analyst and ticket-writer: an approved spec and small tickets |
+| 23 | [Complete workflow II: tests and code](docs/23-complete-workflow-tests-code.md) | Test-writer and implementer: failing tests first, code that can't change them |
+| 24 | [Complete workflow III: review gates](docs/24-complete-workflow-review-gates.md) | Code, security and QA gates in parallel, with a limit on fix rounds |
+| 25 | [Complete workflow IV: end to end](docs/25-complete-workflow-end-to-end.md) | PR writer, `/feature`, a merge-blocking hook, CI and cost |
 
 ### Coming soon
 
-09 Explore → plan → implement · 10 Managing context · 11 CLAUDE.md · 12 Permissions and security · 13 Verification · 14 Git and GitHub · 15 Slash commands and skills · 16 Subagents · 17 Hooks and MCP · 18 Headless mode · 19 Anti-patterns · 22–25 Complete workflow (8 agents: from idea to tickets, tests and code, review gates, end to end)
+09 Explore → plan → implement · 10 Managing context · 11 CLAUDE.md · 12 Permissions and security · 13 Verification · 14 Git and GitHub · 15 Slash commands and skills · 16 Subagents · 17 Hooks and MCP · 18 Headless mode · 19 Anti-patterns
 
 ## Supporting material
 
 - [CHEATSHEET.md](CHEATSHEET.md): commands and shortcuts on one page
 - [templates/CLAUDE.md.example](templates/CLAUDE.md.example): starting point for your `CLAUDE.md`
-- [templates/agents/](templates/agents/) and [templates/commands/](templates/commands/): ready-to-use subagents and slash commands for the AI workflows
+- [templates/agents/](templates/agents/), [templates/commands/](templates/commands/) and [templates/hooks/](templates/hooks/): ready-to-use subagents, slash commands and hooks for the AI workflows
 - [examples/](examples/): running project to practice on
 
 ## How to study

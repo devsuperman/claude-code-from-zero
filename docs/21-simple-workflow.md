@@ -88,4 +88,4 @@ After you've done it by hand once, use the command, which chains the steps and s
 - [ ] The reviewer ran the tests and gave a verdict with `file:line`
 - [ ] I read the diff myself before committing
 
-**Next:** module 22 · Complete workflow I (coming soon)
+**Next:** [22 · Complete workflow I: from idea to tickets](22-complete-workflow-spec-tickets.md)

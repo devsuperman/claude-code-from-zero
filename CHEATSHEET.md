@@ -65,6 +65,14 @@
 4. "Use the reviewer agent to review the diff against plans/x.md" (max. 2 rounds)
 5. `git diff` → commit. Or all at once: `/quick-feature X`
 
+**Complete AI workflow** ([modules 22–25](docs/22-complete-workflow-spec-tickets.md))
+
+1. Copy `templates/agents/complete/` to `.claude/agents/`
+2. analyst → `specs/x.md` → you answer questions and approve
+3. ticket-writer → `tickets/x/*.md` → you approve
+4. Per ticket: test-writer → commit failing tests → implementer → code + security + QA gates in parallel (max. 2 rounds) → commit
+5. pr-writer → you approve → open PR. Or all at once: `/feature requests/x.md`
+
 ## Which tool? ([module 03](docs/03-alternatives.md))
 
 | I need... | Category |

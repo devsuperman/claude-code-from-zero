@@ -40,7 +40,7 @@ Create and list them with `/agents`. Call one by name: _"Use the reviewer agent 
 Idea ─▶ planner ─▶ plan ─▶ [you approve] ─▶ builder ─▶ diff + green tests ─▶ reviewer ─▶ [you approve: merge]
 ```
 
-**Complete workflow (8 agents)**, modules 22 to 25 (coming soon): each simple agent splits into specialists.
+**Complete workflow (8 agents)**, modules [22](22-complete-workflow-spec-tickets.md) to [25](25-complete-workflow-end-to-end.md): each simple agent splits into specialists.
 
 | Simple | Complete |
 |---|---|
