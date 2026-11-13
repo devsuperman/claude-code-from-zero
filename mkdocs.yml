@@ -1,0 +1,90 @@
+# Website config. The site is built from a staged copy of the Markdown
+# (see scripts/build-site.sh), so the files in this repo stay plain Markdown.
+site_name: Claude Code from Zero
+site_description: A free, hands-on course for programmers on using Claude Code with a method.
+site_url: https://devsuperman.github.io/claude-code-from-zero/
+repo_url: https://github.com/devsuperman/claude-code-from-zero
+repo_name: devsuperman/claude-code-from-zero
+edit_uri: ""
+
+docs_dir: .site_src
+site_dir: site
+
+# MkDocs always skips folders named templates/; "!" brings them back.
+exclude_docs: |
+  !/templates/
+
+# Single template pages are reached from the modules and the folder pages.
+not_in_nav: |
+  /templates/
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.sections
+    - navigation.footer
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+plugins:
+  - search
+
+markdown_extensions:
+  - tables
+  - admonition
+  - attr_list
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+validation:
+  links:
+    not_found: warn
+    unrecognized_links: warn
+
+# Keep this in the same order as the tables in README.md.
+nav:
+  - Home: index.md
+  - Core:
+      - 00 · Before you start: docs/00-before-you-start.md
+      - 01 · The paradigm shift: docs/01-paradigm.md
+      - 02 · AI Native: docs/02-ai-native.md
+      - 03 · Alternatives: docs/03-alternatives.md
+      - 04 · Installation and first use: docs/04-installation.md
+      - 05 · How Claude Code works: docs/05-how-it-works.md
+      - 06 · Writing good prompts: docs/06-good-prompts.md
+      - 07 · Existing project: docs/07-existing-project.md
+      - 08 · New project: docs/08-new-project.md
+  - AI workflows:
+      - 20 · The map: docs/20-ai-workflows.md
+      - 21 · Simple workflow: docs/21-simple-workflow.md
+      - 22 · Idea to tickets: docs/22-complete-workflow-spec-tickets.md
+      - 23 · Tests and code: docs/23-complete-workflow-tests-code.md
+      - 24 · Review gates: docs/24-complete-workflow-review-gates.md
+      - 25 · End to end: docs/25-complete-workflow-end-to-end.md
+  - Supporting material:
+      - Cheatsheet: CHEATSHEET.md
+      - Agent templates: templates/agents/index.md
+      - Command templates: templates/commands/index.md
+      - Hook templates: templates/hooks/index.md
+      - This repo's CLAUDE.md: CLAUDE.md
