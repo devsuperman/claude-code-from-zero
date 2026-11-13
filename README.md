@@ -2,6 +2,8 @@
 
 A free, hands-on course in English for **programmers** who want to use [Claude Code](https://docs.claude.com/en/docs/claude-code/overview) with a method: less trial and error, more reliable results.
 
+**Read it as a website:** https://devsuperman.github.io/claude-code-from-zero/
+
 > **Source of truth:** Claude Code changes fast. This material explains *how to think and work*; for exact flags, commands and settings, the [official documentation](https://docs.claude.com/en/docs/claude-code/overview) rules. Each module states the date of its last review.
 
 ## Who it's for

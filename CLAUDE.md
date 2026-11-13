@@ -1,12 +1,13 @@
 # Claude Code from Zero
 
-A free, hands-on course for programmers on using Claude Code with a method. It is plain Markdown: no app, no build, no package manager.
+A free, hands-on course for programmers on using Claude Code with a method. It is plain Markdown: no app, no build and no package manager in the content. A website is built from it in CI (see "Website").
 
 ## Layout
 
 - `README.md`: course index. Each module appears in a learning-path table; unwritten modules (09–19) are under "Coming soon".
 - `docs/NN-slug.md`: one module per file. 00–08 are the core track, 20–25 are AI workflows. The numbers 09–19 are reserved for the "Coming soon" modules.
 - `CHEATSHEET.md`: one-page summary of commands, shortcuts and workflow steps.
+- `mkdocs.yml`, `scripts/build-site.sh`, `requirements-site.txt`, `.github/workflows/pages.yml`: the website (see below).
 - `templates/`: files readers copy into their own projects (`CLAUDE.md.example`, `agents/simple`, `agents/complete`, `commands/`, `hooks/`). These are **not** config for this repo, and there is no `.claude/` folder here.
 
 ## Writing a module
@@ -38,6 +39,16 @@ Keep it to about 60–100 lines. The running example is a small URL-shortener AP
 - Agent templates need YAML front matter (`name`, `description`, `tools`); `name` must match the file name.
 - Hook scripts must stay executable and must exit with code 2 to block.
 
+## Website
+
+The course is published to GitHub Pages with MkDocs Material. A push to `main` builds and deploys it; a pull request only builds it.
+
+- `scripts/build-site.sh` copies the Markdown into `.site_src/` (ignored), makes `README.md` the home page, turns template files into pages that show them verbatim, then runs `mkdocs build --strict`.
+- Don't add MkDocs-only syntax or front matter to modules: they must read well on GitHub too.
+- New module: also add it to `nav` in `mkdocs.yml`, in the same order as the `README.md` tables.
+- New template folder: also add a `write_index` line to `scripts/build-site.sh` and a `nav` entry.
+- Preview locally: `pip install -r requirements-site.txt`, then `scripts/build-site.sh --serve`.
+
 ## Verify before committing
 
 Check for broken relative links:
@@ -46,4 +57,4 @@ Check for broken relative links:
 for f in $(git ls-files '*.md'); do d=$(dirname "$f"); grep -oE '\]\([^)#: ]+(#[^)]*)?\)' "$f" | sed -E 's/^\]\(//; s/\)$//; s/#.*//' | while read -r l; do [ -n "$l" ] && [ ! -e "$d/$l" ] && echo "$f -> $l"; done; done
 ```
 
-No output means every link resolves. For hooks, run `bash -n templates/hooks/*.sh`.
+No output means every link resolves. For hooks, run `bash -n templates/hooks/*.sh`. If you can install Python packages, also run `scripts/build-site.sh`: it fails on broken links in the site.
