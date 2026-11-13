@@ -1,6 +1,6 @@
 # 07 · Starting on an existing project
 
-_Last reviewed: 2026-10_
+_Last reviewed: 2026-11_
 
 **Goal:** use Claude Code safely in a repository that already exists, from the first command to the first committed change.
 
@@ -31,7 +31,7 @@ Check two or three points you know. If it gets wrong what you know, distrust the
 /init
 ```
 
-Then **review and trim**. Keep only what the agent would get wrong without knowing: build/test/lint commands, non-obvious conventions, pitfalls. Use the [template](../templates/CLAUDE.md.example) as a guide. Commit the file.
+Then **review and trim**. Keep only what the agent would get wrong without knowing: build/test/lint commands, non-obvious conventions, pitfalls. Use the [template](../templates/CLAUDE.md.example) as a guide. For a real one, see this course's own [CLAUDE.md](../CLAUDE.md): no build commands (there's nothing to build), just the structure, the conventions and the one check to run. Commit the file.
 
 ### 4. Confirm that verification works
 
