@@ -4,7 +4,7 @@ _Last reviewed: 2026-11_
 
 **Goal:** deliver a feature with 3 agents (planner, builder and reviewer) and approve at two points: after the plan and before the commit.
 
-Example throughout the module: **custom aliases** in the shortener from the [running project](../examples/README.md) (`POST /links` accepts an optional `alias`). Swap it for a feature of yours.
+Example throughout the module: adding **custom aliases** to a URL shortener API (`POST /links` accepts an optional `alias`). In the exercise, use a feature from your own project.
 
 ## The three agents
 
@@ -76,7 +76,7 @@ After you've done it by hand once, use the command, which chains the steps and s
 
 ## Exercise
 
-1. Install the agents and the command in a project of yours (or in the shortener).
+1. Install the agents and the command in a project of your own.
 2. Deliver one feature by hand following steps 2 to 5, then another one with `/quick-feature`.
 3. Write down one thing the reviewer caught that you would have missed, and one it missed. Improve its file accordingly.
 

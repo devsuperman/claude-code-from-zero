@@ -4,7 +4,7 @@ _Last reviewed: 2026-10_
 
 **Goal:** create a new project with Claude Code from the first commit, in small, verifiable slices.
 
-Example throughout the module: the **URL shortener** from the [running project](../examples/README.md). Swap the stack for yours.
+Example throughout the module: a small **URL shortener**. Swap the idea and the stack for yours.
 
 ## Step by step
 
@@ -83,7 +83,7 @@ When the agent gets something wrong that will repeat (e.g. using a library outsi
 
 ## Exercise
 
-1. Create a new project following steps 1 to 5 (use the shortener or another of your choice).
+1. Create a new project following steps 1 to 5 (the shortener or an idea of your own).
 2. Deliver at least two slices, each with its own test and commit.
 3. Record in the `CLAUDE.md` at least one correction learned along the way.
 

@@ -74,7 +74,7 @@ The gates reduce what reaches you; they don't replace your review in module 25.
 
 1. Run the three gates on the ticket you implemented in module 23.
 2. Fix the findings in at most 2 rounds, turning at least one bug into a test.
-3. Plant a bug (e.g. accept a negative expiration) and check which gate catches it.
+3. Plant a bug (e.g. remove an input validation) and check which gate catches it.
 
 ## Checklist
 

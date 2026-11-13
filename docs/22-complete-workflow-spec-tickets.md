@@ -4,7 +4,7 @@ _Last reviewed: 2026-11_
 
 **Goal:** turn a request written by a non-developer into an approved spec and small tickets with acceptance criteria, before any code exists.
 
-Example in modules 22 to 25: **expiring links that their owner can delete** in the shortener from the [running project](../examples/README.md). It meets the [signals](20-ai-workflows.md#which-one-to-use) for the complete workflow: rules come from product, there are several tickets and it touches a public endpoint with a secret token.
+Example in modules 22 to 25: **expiring links that their owner can delete** in a URL shortener API. In the exercises, use a feature from your own project. The example meets the [signals](20-ai-workflows.md#which-one-to-use) for the complete workflow: rules come from product, there are several tickets and it touches a public endpoint with a secret token.
 
 ## The two agents
 

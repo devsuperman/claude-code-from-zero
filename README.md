@@ -44,12 +44,11 @@ For people who already program and are comfortable with the terminal and git. We
 - [CHEATSHEET.md](CHEATSHEET.md): commands and shortcuts on one page
 - [templates/CLAUDE.md.example](templates/CLAUDE.md.example): starting point for your `CLAUDE.md`
 - [templates/agents/](templates/agents/), [templates/commands/](templates/commands/) and [templates/hooks/](templates/hooks/): ready-to-use subagents, slash commands and hooks for the AI workflows
-- [examples/](examples/): running project to practice on
 
 ## How to study
 
 1. Read the module (5 minutes).
-2. Do the **exercise** on the running project or on a project of your own.
+2. Do the **exercise** on a project of your own (work or personal), on a separate branch.
 3. Check the **checklist** at the end. If you can't tick every item, repeat the exercise.
 
 ## Contributing
