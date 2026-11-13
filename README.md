@@ -43,6 +43,7 @@ For people who already program and are comfortable with the terminal and git. We
 
 - [CHEATSHEET.md](CHEATSHEET.md): commands and shortcuts on one page
 - [templates/CLAUDE.md.example](templates/CLAUDE.md.example): starting point for your `CLAUDE.md`
+- [CLAUDE.md](CLAUDE.md): this repository's own `CLAUDE.md`, a real example of a lean one
 - [templates/agents/](templates/agents/), [templates/commands/](templates/commands/) and [templates/hooks/](templates/hooks/): ready-to-use subagents, slash commands and hooks for the AI workflows
 
 ## How to study
@@ -58,3 +59,5 @@ Corrections and suggestions are welcome via issue or pull request. When writing 
 - Follow the pattern: **Goal** (1 line), short concept (tables and lists), **exercise** and **checklist**.
 - Be concise: about 60 to 100 lines, answer first, real examples instead of theory.
 - State the review date and avoid data that ages fast (prices, versions); link to the official source.
+
+The full conventions, and the link check to run before committing, are in [CLAUDE.md](CLAUDE.md). Claude Code reads that file too, so you can ask it to write or review a module and it will follow the same rules.
