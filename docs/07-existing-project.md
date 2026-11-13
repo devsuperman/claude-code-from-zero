@@ -71,8 +71,6 @@ Read the diff as if it were someone else's. Only then `git commit`. If you didn'
 
 Repeat steps 1 to 6 on a project of your own. At the end, answer: would the generated `CLAUDE.md` have prevented any mistake the agent made? If so, what was missing from it?
 
-In the running project, use the [URL shortener](../examples/README.md) as a base.
-
 ## Checklist
 
 - [ ] I worked on my own branch, with a clean tree
